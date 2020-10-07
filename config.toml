@@ -1,5 +1,6 @@
 base_url = "https://barlog.li"
 title = "/dev/void"
+description = "Barlog M.'s personal blog around linux and software development"
 theme = "oceanic-zen"
 highlight_code = true
 highlight_theme = "visual-studio-dark"
