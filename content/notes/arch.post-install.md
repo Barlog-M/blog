@@ -147,6 +147,7 @@ Add kernel parameter `random.trust_cpu=on`
 In file **/etc/mkinitcpio.conf** set paramter COMPRESSION="lz4"
 
 ### Disable rtkit log spam
+
 ```
 systemctl edit rtkit-daemon.service
 
@@ -156,5 +157,13 @@ LogLevelMax=warning
 systemctl restart rtkit-daemon
 ```
 
+### Disable log messages `ACPI group/action undefined: button/left / LEFT`
 
+```bash
+$ cat /etc/acpi/events/undefined
+
+event=^button/(up|right|down|left)
+action=<drop>
+
+```
 
