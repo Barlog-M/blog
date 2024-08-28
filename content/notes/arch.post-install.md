@@ -157,12 +157,17 @@ LogLevelMax=warning
 systemctl restart rtkit-daemon
 ```
 
-### Disable log messages `ACPI group/action undefined: button/left / LEFT`
+### Disable log messages `ACPI group/action undefined`
 
 ```bash
-$ cat /etc/acpi/events/undefined
+$ cat /etc/acpi/events/buttons
 
 event=^button/(up|right|down|left)
+action=<drop>
+
+$ cat /etc/acpi/events/jack
+
+event=^jack/(lineout|videoout)
 action=<drop>
 
 ```
