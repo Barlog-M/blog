@@ -172,3 +172,7 @@ action=<drop>
 
 ```
 
+### Disable CPU exploit mitigations
+
+kernel parameter `mitigations=off`
+
