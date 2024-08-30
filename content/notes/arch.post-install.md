@@ -176,3 +176,5 @@ action=<drop>
 
 kernel parameter `mitigations=off`
 
+check if mitigations disable `grep . /sys/devices/system/cpu/vulnerabilities/*`
+
