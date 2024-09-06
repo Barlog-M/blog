@@ -1,6 +1,6 @@
 +++
 title = "Arch Linux. Post installation notes"
-date = 2020-09-30
+date = 2024-09-05
 +++
 
 ### Locale (US English with GB numbers)
@@ -81,15 +81,6 @@ Disable checking connectivity
 $ cat /etc/NetworkManager/conf.d/20-connectivity.conf
 [connectivity]
 enabled=false
-```
-
-### Rng-tools
-
-[Rng-tools](https://wiki.archlinux.org/index.php/Rng-tools)
-
-```bash
-$ pacman -S rng-tools
-$ systemctl enable rngd.service
 ```
 
 ### ACPI
