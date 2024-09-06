@@ -178,3 +178,7 @@ kernel parameter `mitigations=off`
 
 check if mitigations disable `grep . /sys/devices/system/cpu/vulnerabilities/*`
 
+### Enable repository with opitimized for new CPU binaries
+
+[ALHP](https://somegit.dev/ALHP/ALHP.GO)
+
