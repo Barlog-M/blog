@@ -52,8 +52,8 @@ root    hard	nice   	-20     	# Allows root to run a process at minimal niceness
 *	    soft	nproc  	4096
 *	    hard	nproc  	8192    	# Prevent fork-bombs from taking out the system.
 root	hard	nproc  	65536   	# Prevent root from not being able to launch enough processes
-*	    soft	nofile 	262144
-*	    hard	nofile 	262144
+*	    soft	nofile 	1048576
+*	    hard	nofile  1048576
 ```
 
 ### Time synchronization
