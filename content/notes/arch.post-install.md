@@ -103,6 +103,14 @@ hosts: files mymachines myhostname mdns4_minimal [NOTFOUND=return] resolve [!UNA
 $ systemctl enable avahi-daemon.service
 ```
 
+### Disable mDNS in systemd-resolverd if Avahi enabled
+
+In file **/etc/systemd/resolved.conf**
+
+```
+MulticastDNS=no
+```
+
 ### Pacman. Color output
 
 In file **/etc/pacman.conf** uncoment line `Color`
