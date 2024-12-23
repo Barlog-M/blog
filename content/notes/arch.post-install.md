@@ -22,9 +22,9 @@ LC_MEASUREMENT=en_GB.UTF-8
 ```bash
 $ cat /etc/vconsole.conf
 KEYMAP=ruwin_cplk-UTF-8
-FONT=ter-132b
+FONT=ter-v32b
 CONSOLEMAP=
-TIMEZONE=Europe/Moscow
+TIMEZONE=America/New_York
 HARDWARECLOCK=UTC
 USECOLOR=yes
 ```
